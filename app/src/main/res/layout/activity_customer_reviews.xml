@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbc93d"
+    android:backgroundTint="#fbc93d"
+    tools:context="com.example.pet_care_shop.CustomerReviewsActivity">
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <EditText
+        android:id="@+id/txt_RevCstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="8dp"
+        android:background="#30ffffff"
+        android:ems="10"
+        android:fontFamily="@font/baloo_chettan"
+        android:hint="Customer Name"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="#292929"
+        android:textColorHint="#292929"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:gravity="center"
+        android:text="ADD CUSTOMER  REVIEW"
+        android:textColor="#fb4f4f"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_CstReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="#30ffffff"
+        android:ems="10"
+        android:fontFamily="@font/baloo_chettan"
+        android:hint="Customer Review"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="#292929"
+        android:textColorHint="#292929"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_RevCstAddress" />
+
+    <EditText
+        android:id="@+id/txt_RevCstAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#30ffffff"
+        android:ems="10"
+        android:fontFamily="@font/baloo_chettan"
+        android:hint="Customer E-mail"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="#292929"
+        android:textColorHint="#292929"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_RevCstName" />
+
+    <Button
+        android:id="@+id/btnAddreview"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_button_background"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:backgroundTint="#fb4f4f"
+        android:fontFamily="@font/baloo_chettan"
+        android:textColor="#FFFFFF"
+        android:text="Add Review"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_CstReview" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="291dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textReview"
+        app:srcCompat="@drawable/pngwing_comaweada__4_" />
+
+
+    <!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

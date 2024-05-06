@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbc93d"
+    android:backgroundTint="#fbc93d"
+    tools:context="com.example.pet_care_shop.SignUp">
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="192dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:text="Already have acc? Sign in"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_UserType" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textColor="#fb4f4f"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_Sign_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/email__3_"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:hint="Enter Email"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="#272727"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/txt_SignPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="292dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/padlock"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="#272727"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Sign_Email" />
+
+    <EditText
+        android:id="@+id/txt_SignConPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="120dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/security__1_"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="#272727"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_SignPass" />
+
+    <Spinner
+        android:id="@+id/sp_UserType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="32dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_SignConPass" />
+
+    <Button
+        android:id="@+id/btn_SignUp"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="476dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#fb4f4f"
+        android:fontFamily="@font/baloo_chettan"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="265dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="556dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pngeggsssss__2_" />
+    <!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

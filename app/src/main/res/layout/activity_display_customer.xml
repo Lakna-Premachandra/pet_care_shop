@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbc93d"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:text="CUSTOMER DETAILS"
+        android:textColor="#fb4f4f"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <TextView
+        android:id="@+id/textViewPhoneNumber"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAge" />
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhoneNumber" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddress" />
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+    <ImageView
+        android:id="@+id/imageViewCustomer"
+        android:layout_width="169dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGender" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#fb4f4f"
+        android:fontFamily="@font/baloo_chettan"
+        android:onClick="editCustomerDetails"
+        android:text="Edit Customer Details"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCustomer" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#fb4f4f"
+        android:fontFamily="@font/baloo_chettan"
+        android:onClick="deleteCustomer"
+        android:text="Delete Customer Details"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEdit" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#fb4f4f"
+        android:fontFamily="@font/baloo_chettan"
+        android:onClick="home"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

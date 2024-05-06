@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pet_care_shop.CustomerActivity2"
+    android:background="@drawable/user">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fbc93d"
+        android:backgroundTint="#fbc93d"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="-321dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:fontFamily="@font/baloo_chettan"
+                android:gravity="center"
+                android:textColor="#fb4f4f"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="ADD PET POST"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="Payment : Rs.2000   ( Dog /Cat  Per Day)     "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#F44336"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txt_CstmrName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#30ffffff"
+                android:ems="10"
+                android:fontFamily="@font/baloo_chettan"
+                android:padding="20dp"
+                android:textColor="#292929"
+                android:textColorHint="@color/black"
+                android:hint="Customer Name"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/txt_CstmrAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#30ffffff"
+                android:ems="10"
+                android:fontFamily="@font/baloo_chettan"
+                android:hint="Pet Name"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="#292929"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/txt_CstmrPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#30ffffff"
+                android:ems="10"
+                android:fontFamily="@font/baloo_chettan"
+                android:hint="Phone no"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="#292929"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/txt_CstmrNIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#30ffffff"
+                android:ems="10"
+                android:fontFamily="@font/baloo_chettan"
+                android:hint="Pet Breed"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="#292929"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/txt_PropType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#30ffffff"
+                android:ems="10"
+                android:fontFamily="@font/baloo_chettan"
+                android:hint="Pet Type : Cat or Dog"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="#292929"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/txt_BeRooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#30ffffff"
+                android:ems="10"
+                android:fontFamily="@font/baloo_chettan"
+                android:hint="Pet Age"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="#292929"
+                android:textColorHint="@color/black" />
+
+
+            <EditText
+                android:id="@+id/txt_BaRooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#30ffffff"
+                android:ems="10"
+                android:fontFamily="@font/baloo_chettan"
+                android:hint="Sex"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="#292929"
+                android:textColorHint="@color/black" />
+
+
+            <EditText
+                android:id="@+id/txt_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#30ffffff"
+                android:ems="10"
+                android:hint="For many days?"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="#292929"
+                android:textColorHint="@color/black" />
+
+            <Button
+                android:id="@+id/btn_Post"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button_background"
+                android:backgroundTint="#fb4f4f"
+                android:fontFamily="@font/baloo_chettan"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="#FFFEFE"
+                android:text="Post Ad"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

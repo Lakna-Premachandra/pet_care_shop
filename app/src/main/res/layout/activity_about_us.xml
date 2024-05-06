@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#fbc93d">
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:text="ABOUT US"
+        android:textColor="#fb4f4f"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/about_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:lineSpacingExtra="10dp"
+        android:text="At My Pet Care Shop, we believe in the power of furry companionship. Our mission is to create a world where every pet and pet owner experiences the joy, love, and warmth that comes with a strong human-animal bond. With a team of dedicated pet enthusiasts, we strive to provide top-notch care solutions tailored to the unique needs of your beloved pets."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_title" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="336dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_description"
+        app:srcCompat="@drawable/dog_png_9131" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

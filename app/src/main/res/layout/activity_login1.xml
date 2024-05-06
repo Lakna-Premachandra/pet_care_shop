@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbc93d"
+    tools:context="com.example.pet_care_shop.LoginActivity1">
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="#fbc93d"-->
+    <!--        android:backgroundTint="#fbc93d"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:gravity="center"
+        android:text="SIGN IN"
+        android:textColor="#fb4f4f"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_L1_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="28dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/email__3_"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/txt_L1_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="33dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/padlock"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_L1_Email" />
+
+    <Spinner
+        android:id="@+id/spinnerUserType"
+        android:layout_width="382dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="29dp"
+        android:background="#30ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_L1_Password" />
+
+    <Button
+        android:id="@+id/btnLogin1"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#fb4f4f"
+        android:fontFamily="@font/baloo_chettan"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="360dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin1"
+        app:srcCompat="@drawable/pngeggaaaa_3_" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="29dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:text="Don't have acc? Sign Up"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerUserType" />
+    <!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

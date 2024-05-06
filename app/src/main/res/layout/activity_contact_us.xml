@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#fbc93d">
+
+    <TextView
+        android:id="@+id/contact_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:text="CONTACT US"
+        android:textColor="#fb4f4f"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contact_title"
+        app:srcCompat="@drawable/dog_png_9131" />
+
+    <TextView
+        android:id="@+id/contact_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:lineSpacingExtra="10dp"
+        android:text="&quot;We're here to help! Have questions, feedback, or need assistance? Contact us, and our team will get back to you promptly. Your satisfaction is our priority. Thank you for choosing MY PET CARE SHOP for all your pet care needs.&quot;"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/whatsapp_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_image"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/social_media_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contact_description">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/whatsapp_button"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="124dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="WhatsApp"
+        android:src="@drawable/whatsapp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/message_button"
+        app:layout_constraintStart_toEndOf="@+id/instagram_button" />
+
+    <ImageButton
+        android:id="@+id/facebook_button"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="124dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Facebook"
+        android:src="@drawable/facebook__4_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/instagram_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/maps_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="124dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Google Maps"
+        android:src="@drawable/google_maps__1_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/message_button" />
+
+    <ImageButton
+        android:id="@+id/message_button"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="124dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Message"
+        android:src="@drawable/gmail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/maps_button"
+        app:layout_constraintStart_toEndOf="@+id/whatsapp_button" />
+
+    <ImageButton
+        android:id="@+id/instagram_button"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="124dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Instagram"
+        android:src="@drawable/instagram__1_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/whatsapp_button"
+        app:layout_constraintStart_toEndOf="@+id/facebook_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

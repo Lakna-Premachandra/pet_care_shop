@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbc93d"
+    tools:context="com.example.pet_care_shop.Caregiver_DashboardActivity">
+
+
+    <TextView
+        android:id="@+id/userwelcomeTextView2"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="18dp"
+        android:drawableLeft="@drawable/profile_user"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userEmailTextView2"
+        android:layout_width="178dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/userwelcomeTextView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:text="CAREGIVER  DASHBOARD"
+        android:textAlignment="center"
+        android:textColor="#fb4f4f"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEmailTextView2" />
+
+    <TextView
+        android:id="@+id/popularDogsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/baloo_chettan"
+        android:text="Popular Pet Breeds"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_NewWork"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popularDogsTitle"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:id="@+id/popularDogsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_layout_background"
+                    android:src="@drawable/d1" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:text="Labrador "
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_layout_textview_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_layout_background"
+                    android:padding="8dp"
+                    android:src="@drawable/dog_png_9107" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_layout_textview_background"
+                    android:padding="5dp"
+                    android:text="Rottweiler"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_layout_background"
+                    android:padding="8dp"
+                    android:src="@drawable/d3" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:text="Pomeranian"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_layout_textview_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_layout_background"
+                    android:padding="8dp"
+                    android:src="@drawable/dog_png_22636" />
+
+                <TextView
+                    android:layout_width="101dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Beagle"
+                    android:background="@drawable/rounded_layout_textview_background"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_layout_background"
+                    android:padding="8dp"
+                    android:src="@drawable/c1" />
+
+                <TextView
+                    android:layout_width="99dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_layout_textview_background"
+                    android:padding="5dp"
+                    android:text="Calico"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_layout_background"
+                    android:padding="8dp"
+                    android:src="@drawable/c2" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/rounded_layout_textview_background"
+                    android:padding="5dp"
+                    android:text="Bengal"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_layout_background"
+                    android:padding="8dp"
+                    android:src="@drawable/cat_png_40355" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_layout_textview_background"
+                    android:padding="5dp"
+                    android:text="Persian"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_layout_background"
+                    android:padding="8dp"
+                    android:src="@drawable/c4" />
+
+                <TextView
+                    android:layout_width="101dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/rounded_layout_textview_background"
+                    android:padding="5dp"
+                    android:text="Oriental"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Add more LinearLayouts for additional dogs -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- HorizontalScrollView for Popular Cats -->
+    <!-- HorizontalScrollView for Popular Cats -->
+
+
+    <Button
+        android:id="@+id/btn_NewWork"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#fb4f4f"
+        android:drawableLeft="@drawable/searching_magnifying_glass__4_"
+        android:fontFamily="@font/baloo_chettan"
+        android:padding="10dp"
+        android:text="VIEW POSTS"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_AddReview"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <Button
+        android:id="@+id/btn_ContactUs2"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#fb4f4f"
+        android:drawableLeft="@drawable/question_mark"
+        android:fontFamily="@font/baloo_chettan"
+        android:padding="10dp"
+        android:paddingEnd="16dp"
+        android:text="Contact Us"
+        android:textColor="#FFFEFE"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/logoutButton"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_VeiwReview" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#fb4f4f"
+        android:drawableLeft="@drawable/logout"
+        android:fontFamily="@font/baloo_chettan"
+        android:padding="10dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_AboutUs2" />
+
+    <Button
+        android:id="@+id/btn_AddReview"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#fb4f4f"
+        android:drawableLeft="@drawable/add__1_"
+        android:fontFamily="@font/baloo_chettan"
+        android:padding="10dp"
+        android:text="Add Review"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <Button
+        android:id="@+id/btn_VeiwReview"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#fb4f4f"
+        android:drawableLeft="@drawable/file"
+        android:fontFamily="@font/baloo_chettan"
+        android:padding="10dp"
+        android:text="View Reviews"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_AboutUs2"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_NewWork" />
+
+    <Button
+        android:id="@+id/btn_AboutUs2"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#fb4f4f"
+        android:drawableLeft="@drawable/group"
+        android:fontFamily="@font/baloo_chettan"
+        android:padding="10dp"
+        android:text="About Us"
+        android:textColor="#FFFEFE"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_AddReview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

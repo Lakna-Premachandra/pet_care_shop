@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CleanMe">
+        <activity
+            android:name=".DisplayCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerInfoNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddPet"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Caregiver_DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Pet_Owner_DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Post_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AllReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostedAdsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".Pet_care_Giver_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerProfile"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayCustomerInfo"
+            android:exported="false" />
+        <activity
+            android:name=".AddCustomerInfo"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayDataActivivty"
+            android:exported="false" />
+        <activity
+            android:name=".ViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
