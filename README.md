@@ -3,7 +3,8 @@
 I developed this Android application as a platform for connecting pet owners (customers) with pet caregivers. It allows customers to post caregiving requests for their pets, and caregivers can view these posts and confirm jobs. The app facilitates communication between both parties and provides features for managing profiles and feedback.
 
 # Features
-Customer Features:
+
+# Customer Features:
 
 - User Registration/Login: Ccustomers can register and login to the system.
 - Add Pet Details: Customers can add details about their pets, such as name, breed, age, etc.
@@ -16,7 +17,7 @@ Customer Features:
 <img width='250px' alt='ss2' src='https://github.com/Lakna-Premachandra/pet_care_shop/assets/136817118/bea2d07f-a122-470c-8da2-c5efe0e2f2b6'>
 
 
-Caregiver Features:
+# Caregiver Features:
 
 - User Registration/Login: Caregivers can register and login to the system.
 - View Posts: Caregivers can view caregiving requests posted by customers.
