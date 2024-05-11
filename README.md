@@ -10,9 +10,11 @@ Customer Features:
 - Post Caregiving Requests: Customers can post requests for pet caregiving, specifying requirements and preferences.
 - Give Feedback: Customers can provide feedback on caregivers after a job is completed.
 - View/Edit Profile: Customers can view and edit their profile details, such as contact information and preferences.
+  
 
 <img width='250px' alt='ss1' src='https://github.com/Lakna-Premachandra/pet_care_shop/assets/136817118/cc60d0ad-f8af-4eff-9d8b-2c7d76cdb911'>
 <img width='250px' alt='ss2' src='https://github.com/Lakna-Premachandra/pet_care_shop/assets/136817118/bea2d07f-a122-470c-8da2-c5efe0e2f2b6'>
+
 
 Caregiver Features:
 
@@ -22,8 +24,10 @@ Caregiver Features:
 - View Feedback: Caregivers can view feedback provided by customers for their services.
 - Add Feedback: Caregivers can provide feedback on customers after completing a job.
 - View/Edit Profile: Caregivers can view and edit their profile details, such as contact information and experience.
+  
 
 <img width='250px' alt='ss3' src='https://github.com/Lakna-Premachandra/pet_care_shop/assets/136817118/3b77db6e-2f92-4323-a375-b5300d0ed507'>
+
 
 #Technologies Used
 Java : The app is developed using Java programming language in Android Studio.
