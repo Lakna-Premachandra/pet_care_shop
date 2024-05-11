@@ -31,5 +31,6 @@ I developed this Android application as a platform for connecting pet owners (cu
 
 
 # Technologies Used
-Java : The app is developed using Java programming language in Android Studio.
-MySQL: MySQL is used as the database management system to store user information, pet details, posts, and feedback.
+
+- Java : The app is developed using Java programming language in Android Studio.
+- MySQL: MySQL is used as the database management system to store user information, pet details, posts, and feedback.
