@@ -1,8 +1,8 @@
-#Pet Care Giving App
+# Pet Care Giving App
 
 I developed this Android application as a platform for connecting pet owners (customers) with pet caregivers. It allows customers to post caregiving requests for their pets, and caregivers can view these posts and confirm jobs. The app facilitates communication between both parties and provides features for managing profiles and feedback.
 
-#Features
+# Features
 Customer Features:
 
 - User Registration/Login: Ccustomers can register and login to the system.
@@ -29,6 +29,6 @@ Caregiver Features:
 <img width='250px' alt='ss3' src='https://github.com/Lakna-Premachandra/pet_care_shop/assets/136817118/3b77db6e-2f92-4323-a375-b5300d0ed507'>
 
 
-#Technologies Used
+# Technologies Used
 Java : The app is developed using Java programming language in Android Studio.
 MySQL: MySQL is used as the database management system to store user information, pet details, posts, and feedback.
